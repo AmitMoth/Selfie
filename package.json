@@ -1,0 +1,23 @@
+{
+  "name": "myselfieapp",
+  "version": "1.0.0",
+  "description": "api for app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "author": "'AmitV'",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "is-null-or-empty": "0.0.1",
+    "mongoose": "^4.13.2",
+    "nodemon": "^1.12.1",
+    "simple-node-logger": "^0.93.30",
+    "uuid": "^3.1.0"
+  }
+}
