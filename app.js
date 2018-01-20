@@ -5,22 +5,21 @@ var express = require('express'),
 var cors=require('cors');
 var port = process.env.PORT || 3000;
 
-// var MongoUrl = 'mongodb://amitkv:amitkv@ds113606.mlab.com:13606/dbmyselfie';
-// var LocalMongoUrl = 'mongodb://localhost:27017/dbmyselfie';
-// //connect to mongooseDB// local: 
-// mongoose.connect(MongoUrl,{useMongoClient: true});
-// //on connection
-// mongoose.connection.on('connected',()=>{
-// console.log('connected to mongodb');
+var MongoUrl = 'mongodb://amitkv:amitkv@ds113606.mlab.com:13606/dbmyselfie';
+//var LocalMongoUrl = 'mongodb://localhost:27017/dbmyselfie';
+//connect to mongooseDB// local: 
+mongoose.connect(MongoUrl,{useMongoClient: true});
+//on connection
+mongoose.connection.on('connected',()=>{
+console.log('connected to mongodb');
+});
 
-// });
-
-// mongoose.connection.on('error',(err)=>{
-//     if(err)
-//         {
-//             console.log('mongodb can not connected');
-//         }
-// });
+mongoose.connection.on('error',(err)=>{
+    if(err)
+        {
+            console.log('mongodb can not connected');
+        }
+});
 
 var User=require('./Models/userModels');
 
