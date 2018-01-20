@@ -4,7 +4,6 @@ var isNullOrEmpty = require('is-null-or-empty');
 var resData;
 var userContrller=function(User){
  var post=function(req,res){
-     //console.log('++++++++++++++++++signup');
      var user=new User(req.body);
      res.setHeader('Access-Control-Allow-Methods', 'POST');
      res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
