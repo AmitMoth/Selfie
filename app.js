@@ -5,8 +5,8 @@ var express = require('express'),
 var cors=require('cors');
 var port = process.env.PORT || 3000;
 
-var MongoUrl = 'mongodb://amitkv:amitkv@ds113606.mlab.com:13606/dbmyselfie';
-//var LocalMongoUrl = 'mongodb://localhost:27017/dbmyselfie';
+var MongoUrl = 'mongo connsction sring';
+//var LocalMongoUrl = 'mongodb://localhost:27017/dbname';
 //connect to mongooseDB// local: 
 mongoose.connect(MongoUrl,{useMongoClient: true});
 //on connection
